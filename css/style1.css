@@ -1,0 +1,107 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "footer footer footer";
+  grid-template-rows: 90px 1fr auto;  
+  grid-template-columns: 200px 1fr;
+
+  height: 100vh;
+  margin: auto;
+  font-family:Calibri light;
+  }  
+ nav {
+
+  margin-left:10px;
+  width: auto;
+  background:#FFFFFF;
+
+
+  }
+  
+ div {
+
+  width: auto;
+  }
+header{
+	border-style:solid;
+    background:black;
+}
+
+ article{
+  padding: 1em;
+  background: #F2F2F2;
+
+ }
+
+ 
+ footer{
+	 border-top-style:solid;
+ }
+ #main_section{
+
+ }
+#pageTytle{
+	
+	color: white;
+	font-size:25pt;
+	margin-top:25px;
+	
+
+	
+}
+#navTytle{
+	
+	color: black;
+	font-size:20pt;
+
+	
+}
+.logo{
+	
+	width:90px;
+	height:90px;
+	float:left;
+	padding: 1em;
+}
+#mytable {
+	
+	font-size:13px;
+}
+.td_text {
+border: none;
+background:none;
+font-size:13px;
+}
+#pageHeader {
+  grid-area: header;
+  height:auto;
+  }
+#pageFooter {
+  grid-area: footer;
+  float:bottom;
+  }
+#mainArticle { 
+  grid-area: article;  
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+  #pageTytle{
+	color: white;
+	font-size:15pt;
+}
+}

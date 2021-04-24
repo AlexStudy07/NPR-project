@@ -1,0 +1,34 @@
+#menu5, #navTytle {
+	margin:10px;
+	width:auto;
+
+}
+	
+#menu5 li a {
+	height: 32px;
+	text-decoration: none;
+
+}	
+
+#menu5 li a:link, #menu5 li a:visited {
+	color: black;
+	display: block;
+	background:  url(n);
+    
+
+}
+#main2 {
+	display:none;
+}
+.submenu2{display:none;
+         margin-left:20px;
+         }
+#menu5 li a:hover, #menu5 li a:active {
+	color: #a8a4a4;
+
+}
+#menu5 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

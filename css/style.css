@@ -1,0 +1,168 @@
+body{
+	background-image: url(top.png), url(bottom.png);
+    background-position:top, bottom;
+    background-repeat: repeat-x, repeat-x;
+}
+.page_content {
+  
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "footer footer footer";
+  grid-template-rows: 100px 1fr auto;  
+  grid-template-columns: 200px 1fr;
+
+  height: 100vh;
+  margin: auto;
+  font-family:Calibri light;
+  }  
+  
+ nav {
+  width: auto;
+  background:#F5F5F5;
+
+
+  }
+header{
+    background:black;
+	display: inline;
+}
+
+ article{
+  padding: 1em;
+  background-color: #F2F2F2;
+  background:url(sd.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  
+  
+ }
+ article h1 {
+	 
+	 margin-top:30px;
+ }
+#main_section{
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right:auto;
+
+}
+
+ footer{
+
+	 background: black;
+	 color:white;
+	 text-align: center;
+	 height:50px;
+	 width:auto;
+ }
+ #time{
+     margin-top:20px;
+ }
+
+ #main_section{
+
+ }
+#pageTytle{
+	
+	color: white;
+	font-size:30pt;
+	margin-top:15px;
+	margin-bottom:auto;
+	float: left;
+
+	
+}
+#navTytle{
+	
+	color: black;
+	font-size:20pt;
+
+	
+}
+.logo{
+	
+	width:90px;
+	height:90px;
+	float:left;
+	padding: 1em;
+}
+#mytable {
+	
+	font-size:15px;
+}
+.td_text {
+border: none;
+background:none;
+font-size:13px;
+}
+#pageHeader {
+  grid-area: header;
+  height:auto;
+  display: inline;
+  color: #fff;
+  }
+#loggedUser {
+float: right;
+height:100%;
+margin: 15px auto;
+width: 200px; 
+}
+#pageFooter {
+  grid-area: footer;
+
+  }
+#mainArticle { 
+  grid-area: article;  
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+    body{
+        
+        max-width:auto;
+    }
+
+  .page_content { 
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "footer";
+    grid-template-rows: 100px 1fr auto;  
+    grid-template-columns: 1fr;
+ }
+  #pageTytle{
+	color: white;
+	font-size:15pt;
+}
+.line{
+	
+display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}
+#pageHeader {
+  grid-area: header;
+  height:auto;
+  display: inline;
+  color: #fff;
+  }
+#loggedUser {
+float: right;
+height:100%;
+margin: 15px auto;
+width: 100px; 
+}
+article{
+
+    display:none;
+}
+}
+}
