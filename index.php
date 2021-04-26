@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8_general_ci">
-<title>Network problem reports</title>
+<title>Network problem reports-Modified</title>
 </head>
 <body>
 <?php 
