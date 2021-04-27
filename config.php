@@ -1,12 +1,12 @@
 <?php
 $servername = "localhost";
-$username = "id9341405_root";
-$password = "Or@ng3";
+$username = "root";
+$password = "";
 $database = "id9341405_bd";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
-$db = new PDO("mysql:host=localhost;dbname=id9341405_bd","id9341405_root","Or@ng3");
+$db = new PDO("mysql:host=localhost;dbname=id9341405_bd","root","");
                 
 // Check connection
 if (!$conn) {
