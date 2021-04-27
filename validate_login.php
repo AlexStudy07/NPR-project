@@ -6,8 +6,8 @@ $email = $_POST["users_email"];
 $pass = $_POST["users_pass"];
 
 // Connect to the database
-$con = mysqli_connect("localhost","id9341405_root","Or@ng3");
-$mysqli = new mysqli("localhost", "id9341405_root", "Or@ng3", "id9341405_bd");
+$con = mysqli_connect("localhost","root","");
+$mysqli = new mysqli("localhost", "root", "", "id9341405_bd");
 // Make sure we connected successfully
 if(! $con)
 {
@@ -32,7 +32,7 @@ if($total == 1){
     
     // After assigning the session variables, 
     // set the url to redirect the user to members page.    
-    $url .= '/index.php';    
+    $url .= '/NPR-project/index.php';    
 }
 else{
     // If not, then redirect the user the login page with an error
